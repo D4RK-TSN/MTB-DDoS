@@ -1,16 +1,14 @@
 #!/usr/bin/env python
 # -*- encoding: UTF-8 -*-
 
-import random
-import re
-try:
-    import requests
-except ImportError:
-    print('You must install requests lib\n $ pip install requests')
-import threading
-import time
-import argparse
-from arts import Header, options
+from os import system, name
+import os, threading, requests, sys, cloudscraper, datetime, time, socket, socks, ssl, random, httpx
+from urllib.parse import urlparse
+from requests.cookies import RequestsCookieJar
+import undetected_chromedriver as webdriver
+from sys import stdout
+from colorama import Fore, init
+
 
 config = {}     # Stores de configuration provided by the user
 success = 0     # Count of the amount of packets successfully send
