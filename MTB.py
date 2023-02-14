@@ -8,7 +8,7 @@ from requests.cookies import RequestsCookieJar
 import undetected_chromedriver as webdriver
 from sys import stdout
 from colorama import Fore, init
-
+Prints the header
 
 config = {}     # Stores de configuration provided by the user
 success = 0     # Count of the amount of packets successfully send
