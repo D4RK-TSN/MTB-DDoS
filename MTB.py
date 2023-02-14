@@ -10,7 +10,7 @@ except ImportError:
 import threading
 import time
 import argparse
-from arts import Header, options
+import Header, options
 
 config = {}     # Stores de configuration provided by the user
 success = 0     # Count of the amount of packets successfully send
